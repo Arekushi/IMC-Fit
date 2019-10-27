@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/classificacaoToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/tabela"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="36sp" />
+
+    <!-- Tabela -->
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:shrinkColumns="*"
+        android:stretchColumns="*"
+        android:background="#ffffff">
+
+        <!-- Linha 01 -->
+        <TableRow
+            android:id="@+id/linha01"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+
+            <TextView
+                android:id="@+id/txvMagreza"
+                android:layout_weight="1"
+                android:background="@color/md_blue_grey_500"
+                android:gravity="center"
+                android:padding="20dip"
+                android:text="@string/magreza"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/valueMagreza"
+                android:layout_weight="1"
+                android:background="@color/md_blue_grey_500"
+                android:textColor="#FFFFFF"
+                android:padding="20dip"
+                android:gravity="center"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <!-- Linha 02 -->
+        <TableRow
+            android:id="@+id/linha02"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/txvNormal"
+                android:text="@string/normal"
+                android:layout_weight="1"
+                android:background="@color/md_blue_500"
+                android:textColor="#FFFFFF"
+                android:padding="20dip"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/valueNormal"
+                android:layout_weight="1"
+                android:background="@color/md_blue_500"
+                android:textColor="#FFFFFF"
+                android:padding="20dip"
+                android:gravity="center"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <!-- Linha 03 -->
+        <TableRow
+            android:id="@+id/linha03"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/txvAcimaDoPeso"
+                android:text="@string/acimaDoPeso"
+                android:layout_weight="1"
+                android:background="@color/md_orange_500"
+                android:textColor="#FFFFFF"
+                android:padding="20dip"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/valueAcimaPeso"
+                android:layout_weight="1"
+                android:background="@color/md_orange_500"
+                android:textColor="#FFFFFF"
+                android:padding="20dip"
+                android:gravity="center"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <!-- Linha 04 -->
+        <TableRow
+            android:id="@+id/Linha04"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/txvObesidadeI"
+                android:text="@string/obesidadei"
+                android:layout_weight="1"
+                android:background="@color/md_yellow_900"
+                android:textColor="#FFFFFF"
+                android:padding="20dip"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/valueObesidadeI"
+                android:layout_weight="1"
+                android:background="@color/md_yellow_900"
+                android:textColor="#FFFFFF"
+                android:padding="20dip"
+                android:gravity="center"
+                android:textSize="16sp" />
+        </TableRow>
+
+        <!-- Linha 05 -->
+        <TableRow
+            android:id="@+id/Linha05"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:id="@+id/txvObesidadeII"
+                android:text="@string/obesidadeii"
+                android:layout_weight="1"
+                android:background="@color/md_red_500"
+                android:textColor="#FFFFFF"
+                android:padding="20dip"
+                android:gravity="center"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/valueObesidadeII"
+                android:layout_weight="1"
+                android:background="@color/md_red_500"
+                android:textColor="#FFFFFF"
+                android:padding="20dip"
+                android:gravity="center"
+                android:textSize="16sp" />
+        </TableRow>
+    </TableLayout>
+
+</LinearLayout>

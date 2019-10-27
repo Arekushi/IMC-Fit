@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Light/Day -->
+<resources>
+    <!-- Colors -->
+    <color name="colorPrimary">#1F1C1C</color>
+    <color name="colorPrimaryDark">#110F0F</color>
+
+    <!-- Accent -->
+    <color name="colorAccent">#D81B60</color>
+
+    <!-- Text -->
+
+    <!-- Background -->
+    <color name="colorBackground">#0E0A0A</color>
+</resources>

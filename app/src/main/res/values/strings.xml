@@ -1,0 +1,97 @@
+<resources>
+
+    <!-- App -->
+    <string name="app_name">IMC - Fit</string>
+
+    <!-- Facebook -->
+    <string name="facebook_app_id">2477735132438989</string>
+    <string name="fb_login_protocol_scheme">fb2477735132438989</string>
+
+    <!-- Shared Preferences -->
+    <string name="namePreferences">IMC_FIT_PREFERENCES</string>
+    <string name="firstEnter">:firstEnter</string>
+    <string name="logged">:logged</string>
+    <string name="typeLogin">:typeLogin</string>
+    <string name="email">:email</string>
+
+    <!-- Activity= FirstVisitedActivity -->
+    <string name="btnComecar">Vamos começar?</string>
+
+    <!-- Activity= RegisterLoginActivity -->
+    <string name="descricaoImvLogo">Logo</string>
+    <string name="btnConvidado">Continuar como convidado</string>
+    <string name="sucess">Logado com sucesso</string>
+    <string name="cancel">Login cancelado</string>
+    <string name="error">Aconteceu algo, tente novamente</string>
+    <string name="logout">Deslogado com sucesso</string>
+    <string name="convidado">Logado como convidado</string>
+    <string name="facebook">Facebook</string>
+    <string name="google">Google</string>
+    <string name="convidadoName">Convidado</string>
+    <string name="convidadoEmail">convidado@convidado.com</string>
+
+    <!-- Layout= dialog_create_imc -->
+    <string name="txvIMC">IMC</string>
+    <string name="txvPeso">Peso (kg)</string>
+    <string name="txvAltura">Altura (m)</string>
+    <string name="btnCalcular">Calcular</string>
+    <string name="btnTabela">Tabela</string>
+    <string name="txvSexo">Sexo</string>
+    <string name="zero">0</string>
+    <string-array name="spnSexo">
+        <item>Feminino</item>
+        <item>Masculino</item>
+    </string-array>
+
+    <!-- Activity= MainActivity -->
+    <string name="title_activity_main">Home</string>
+
+        <!-- Nav -->
+        <string name="menu_home">Home</string>
+        <string name="menu_conta">Conta</string>
+        <string name="menu_noturno">Modo noturno</string>
+        <string name="menu_classificar">Classifique o app</string>
+        <string name="menu_sobre">Sobre nós</string>
+        <string name="menu_github">Github</string>
+        <string name="menu_logout">Logout</string>
+
+    <!-- AlertDialog= IMC -->
+    <string name="magreza">Magreza</string>
+    <string name="normal">Normal</string>
+    <string name="acimaDoPeso">Sobrepeso</string>
+    <string name="obesidadei">Obesidade I</string>
+    <string name="obesidadeii">Obesidade II</string>
+    <string name="imc">IMC - %1$s</string>
+
+    <string-array name="classificacoes">
+        <item>@string/magreza</item>
+        <item>@string/normal</item>
+        <item>@string/acimaDoPeso</item>
+        <item>@string/obesidadei</item>
+        <item>@string/obesidadeii</item>
+    </string-array>
+
+    <string-array name="valoresMasculino">
+        <item>20</item>
+        <item>24.9</item>
+        <item>29.9</item>
+        <item>39.9</item>
+    </string-array>
+
+    <string-array name="valoresFeminino">
+        <item>19</item>
+        <item>23.9</item>
+        <item>28.9</item>
+        <item>38.9</item>
+    </string-array>
+
+    <!-- AlertDialog= TabelaIMC -->
+    <string name="tabela">Tabela</string>
+
+    <string name="selecioneSexo">Selecione um sexo</string>
+
+    <string name="abaixoDe">Abaixo de %1$s</string>
+    <string name="entreValores">%1$s a %2$s</string>
+    <string name="acimaDe">Acima de %1$s</string>
+
+</resources>

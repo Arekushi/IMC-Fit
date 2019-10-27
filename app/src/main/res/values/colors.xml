@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Light/Day -->
+<resources>
+    <!-- Colors -->
+    <color name="colorPrimary">#B388FF</color>
+    <color name="colorPrimaryDark">#7C4DFF</color>
+
+    <!-- Accent -->
+    <color name="colorAccent">#7C4DFF</color>
+
+    <!-- Background -->
+    <color name="colorBackground">#FFFFFF</color>
+
+
+    <!-- Edit Text Border -->
+    <color name="colorBlack">#000000</color>
+    <color name="colorRed">#EC407A</color>
+    <color name="myGray">#777777</color>
+
+    <integer-array name="coresClassificacao">
+        <item>@color/md_blue_grey_500</item>
+        <item>@color/md_blue_500</item>
+        <item>@color/md_orange_500</item>
+        <item>@color/md_yellow_900</item>
+        <item>@color/md_red_500</item>
+    </integer-array>
+</resources>

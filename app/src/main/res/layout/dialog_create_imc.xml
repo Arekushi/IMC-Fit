@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/alertToolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:layout_gravity="center"
+        android:background="@color/colorPrimary"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/txvIMC"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="36sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+
+            <TextView
+                android:id="@+id/txvPeso"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/txvPeso"
+                android:textSize="25sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@+id/skbPeso"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <EditText
+                android:id="@+id/txvSeekPeso"
+                android:layout_width="65dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/txv_border"
+                android:focusable="auto"
+                android:textColor="@color/myGray"
+                android:gravity="center"
+                android:hint="@string/zero"
+                android:importantForAutofill="no"
+                android:inputType="number"
+                android:maxLength="3"
+                android:selectAllOnFocus="false"
+                android:textSize="25sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/txvSeekAltura"
+                android:layout_width="65dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginEnd="16dp"
+                android:textColor="@color/myGray"
+                android:background="@drawable/txv_border"
+                android:focusable="auto"
+                android:gravity="center"
+                android:hint="@string/zero"
+                android:importantForAutofill="no"
+                android:inputType="number|numberDecimal"
+                android:maxLength="4"
+                android:textSize="25sp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/skbPeso" />
+
+            <TextView
+                android:id="@+id/txvAltura"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/txvAltura"
+                android:textSize="25sp"
+                android:textStyle="normal"
+                app:layout_constraintBottom_toTopOf="@+id/skbAltura"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <SeekBar
+                android:id="@+id/skbPeso"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginEnd="16dp"
+                android:max="200"
+                android:padding="16dp"
+                android:progress="0"
+                android:theme="@style/mySeekbar"
+                app:layout_constraintEnd_toStartOf="@+id/txvSeekPeso"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <SeekBar
+                android:id="@+id/skbAltura"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="75dp"
+                android:layout_marginEnd="16dp"
+                android:max="250"
+                android:padding="16dp"
+                android:progress="0"
+                android:theme="@style/mySeekbar"
+                app:layout_constraintEnd_toStartOf="@id/txvSeekAltura"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/skbPeso" />
+
+            <Button
+                android:id="@+id/btnCalcular"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="25dp"
+                android:background="@color/colorPrimary"
+                android:text="@string/btnCalcular"
+                android:textColor="@android:color/white"
+                app:layout_constraintBottom_toTopOf="@+id/btnTabela"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spnSexo" />
+
+            <Button
+                android:id="@+id/btnTabela"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginEnd="100dp"
+                android:layout_marginBottom="50dp"
+                android:text="@string/btnTabela"
+                android:textColor="@android:color/white"
+                android:background="@color/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <Spinner
+                android:id="@+id/spnSexo"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="75dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/skbAltura" />
+
+            <LinearLayout
+                android:id="@+id/ll_hint_spinner"
+                android:layout_width="0dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="75dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="75dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/skbAltura">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="8"
+                    android:background="#FFFFFF"
+                    android:gravity="center"
+                    android:text="@string/txvSexo"
+                    android:textColor="@color/myGray" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</LinearLayout>
