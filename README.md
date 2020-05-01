@@ -1,3 +1,3 @@
 # IMC-Fit
 
-Aplicativo desenvolvido em linguagem Kotlin durante o curso de desenvolvimento Android da MadCode.
+> Application developed during the Android Development course at MadCode.
